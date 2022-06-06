@@ -1,6 +1,6 @@
-    var tens = 0;
+    var tens = 00;
     var appendTens = document.getElementById("tens");
-    var seconds = 0;
+    var seconds = 00;
     var appendSeconds = document.getElementById("seconds");
     var interval;
 
@@ -13,8 +13,8 @@ function stop() {
 
 function reset() {
     clearInterval(interval);
-    var tens = "00"
-    var seconds = "00"
+    tens = "00"
+    seconds = "00"
     appendTens.innerHTML = "00";
     appendSeconds.innerHTML ="00";
 
