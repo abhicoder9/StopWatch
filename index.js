@@ -13,13 +13,15 @@ function stop() {
 
 function reset() {
     clearInterval(interval);
-    var tens = 0;
-    var seconds = 0;
-    appendTens.innerHTML = "0" + tens;
-    appendSeconds.innerHTML = "0" + seconds;
+    var tens = "00"
+    var seconds = "00"
+    appendTens.innerHTML = "00";
+    appendSeconds.innerHTML ="00";
+
+
 }
 function stopwatch() {
-    tens++;
+    tens ++;
     if (tens <= 9) {
         appendTens.innerHTML = "0" + tens;
     }
@@ -30,7 +32,7 @@ function stopwatch() {
 
     if (tens > 99) {
         console.log("seconds");
-        seconds++;
+        seconds ++;
         appendSeconds.innerHTML = "0" + seconds;
         tens = 0;
         appendTens.innerHTML = "0"+ 0;
